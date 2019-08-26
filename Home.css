@@ -1,0 +1,144 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+	color: white;
+  font-weight: bold;
+	font-size: 2.5rem;
+  background-color: #020202;
+	text-align: center;
+  height: 8rem;
+  padding-top: 2.7rem;
+}
+
+img {
+  width: 100vw;
+}
+
+.banner {
+  width: 100%;
+  height: 20rem;
+  background-image: url(Afbeeldingen/Banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.blokken {
+  position: relative;
+  background-color: white;
+  z-index: 30;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.blok {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+  display: block;
+  position: relative;
+}
+
+.blok1 {
+  border: 3px solid black;
+}
+
+.blok2 {
+  border: 3px solid black;
+}
+
+.blok3 {
+  border: 3px solid black;
+}
+
+.blok4 {
+  border: 3px solid black;
+}
+
+.afbeeldinginblok {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 50vw;
+  max-height: 25rem;
+}
+
+.blok1 .afbeeldinginblok {
+  background-image: url(Afbeeldingen/Beerschot.jpg);
+}
+
+.blok2 .afbeeldinginblok {
+  background-image: url(Afbeeldingen/Lach.jpg);
+}
+
+.blok3 .afbeeldinginblok {
+  background-image: url(Afbeeldingen/School.jpg);
+}
+
+.blok4 .afbeeldinginblok {
+  background-image: url(Afbeeldingen/animatie.png);
+}
+
+.blok .tekstinblok {
+  padding: 2rem;
+}
+
+.blok .tekstinblok h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blok .tekstinblok h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.blok .tekstinblok a {
+  background-color: lightgrey;
+  text-align: center;
+  display: inline-block;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background-color: #020202;
+  text-align: center;
+  height: 8rem;
+  padding-top: 2.7rem;
+}
+
+@supports (grid-area: auto) {
+
+  @media (min-width: 45rem) {
+    .blokken {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+  @media (min-width: 70rem) {
+    .blokken {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+}

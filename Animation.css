@@ -1,0 +1,340 @@
+main {
+      height: 100vh;
+      background-color: lightblue;
+      overflow: hidden;
+      animation-name: achtergrond;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+
+@keyframes achtergrond {
+      100% {
+          background-color: #051d44;
+      }
+}
+
+.berg {
+      background-color: green;
+      width: 40vw;
+      height: 100vh;
+      transform: rotate(45deg);
+      position: relative;
+      left: 100vw;
+      top: 50vh;
+      animation: mijnanimatie 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+}
+
+@keyframes mijnanimatie {
+      98% {
+            opacity: 1;
+      }
+      99% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-120vw,120vw);
+      }
+      100% {
+            transform: translate(0,0);
+            opacity: 0;
+      }
+}
+
+.weg {
+  width: 100vw;
+  height: 21.7vh;
+  background-color: darkgrey;
+  position: absolute;
+  bottom: 0;
+}
+
+.lijn {
+  width: 100vw;
+  height: 3vh;
+  position: absolute;
+  background-color: white;
+  bottom: 10vh;
+}
+
+.schors {
+  width: 5vw;
+  height: 35vh;
+  background-color: brown;
+  position: absolute;
+  left: 4vw;
+  bottom: -3.5vh;
+}
+
+.boom {
+  position: absolute;
+  left: 82vw;
+  bottom: 25vh;
+}
+
+.bladeren {
+  width: 15vw;
+  height: 30vh;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  bottom: 30vh;
+  left: -1vw;
+}
+
+.gebouw {
+  width: 33vw;
+  height: 65vh;
+  position: absolute;
+  background-color: #c2b280;
+  bottom: 21.5vh;
+  left: 42vw;
+}
+
+.deur {
+  width: 8vw;
+  height: 28vh;
+  background-color: beige;
+  position: absolute;
+  top: 50.5vh;
+  left: 54.5vw;
+}
+
+.deurknop {
+  width: 1.5vw;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: black;
+  left: 55.5vw;
+  top: 62vh;
+  position: absolute;
+}
+
+.raam1 {
+  width: 6.5vw;
+  height: 14.5vh;
+  background-color: yellow;
+  position: absolute;
+  top: 50.5vh;
+  left: 45vw;
+  animation-name: raam1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes raam1 {
+      80% {
+            background-color: yellow;
+      }
+
+      100% {
+            background-color: black;
+      }
+}
+
+.raam2 {
+  width: 6.5vw;
+  height: 14.5vh;
+  background-color: yellow;
+  position: absolute;
+  top: 25vh;
+  left: 45vw;
+  animation-name: raam2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes raam2 {
+      80% {
+            background-color: yellow;
+      }
+
+      100% {
+            background-color: black;
+      }
+}
+
+.raam3 {
+  width: 6.5vw;
+  height: 14.5vh;
+  background-color: yellow;
+  position: absolute;
+  top: 25vh;
+  left: 55.1vw;
+  animation-name: raam3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes raam3 {
+      80% {
+            background-color: yellow;
+      }
+
+      100% {
+            background-color: black;
+      }
+}
+
+.raam4 {
+  width: 6.5vw;
+  height: 14.5vh;
+  background-color: yellow;
+  position: absolute;
+  top: 25vh;
+  left: 65.5vw;
+  animation-name: raam4;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+  @keyframes raam4 {
+        80% {
+              background-color: yellow;
+        }
+
+        100% {
+              background-color: black;
+        }
+  }
+
+.raam5 {
+  width: 6.5vw;
+  height: 14.5vh;
+  background-color: yellow;
+  position: absolute;
+  top: 50.5vh;
+  left: 65.5vw;
+  animation-name: raam5;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes raam5 {
+      80% {
+            background-color: yellow;
+      }
+
+      100% {
+            background-color: black;
+      }
+}
+
+.lading {
+  width: 19vw;
+  height: 27.5vh;
+  background-color: #e76f51;
+  display: inline-block;
+  position: absolute;
+  left: 3.5vw;
+  top: 44.5vh;
+}
+
+.vrachtwagen {
+  width: 10vw;
+  height: 24vh;
+  background-color: #e9c46a;
+  position: absolute;
+  display: inline-block;
+  top: 48vh;
+  left: 23vw;
+}
+
+.wiel1 {
+  width: 4vw;
+  height: 8vh;
+  background-color: black;
+  display: inline-block;
+  border-radius: 50%;
+  left: 7vw;
+  position: absolute;
+  bottom: 22vh;
+}
+
+.wiel2 {
+  width: 4vw;
+  height: 8vh;
+  background-color: black;
+  display: inline-block;
+  border-radius: 50%;
+  left: 25vw;
+  position: absolute;
+  bottom: 22vh;
+}
+
+.raamvrachtwagen {
+  width: 7vw;
+  height: 10vh;
+  background-color: beige;
+  position: absolute;
+  display: inline-block;
+  top: 50vh;
+  left: 24vw;
+}
+
+nav a:nth-child(1) {
+  left: 2vw;
+}
+
+nav a:nth-child(2) {
+  left: 9vw;
+}
+
+nav a:nth-child(3) {
+  left: 20vw;
+}
+
+nav a:nth-child(4) {
+  left: 28vw;
+}
+
+nav a:nth-child(5) {
+  left: 36vw;
+}
+
+nav a {
+  position: absolute;
+	top: 3vh;
+	text-decoration: none;
+	color: #353839;
+  font-size: 1.5vw;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+	color: #ededed;
+	animation-name: mijnanimatie1;
+  animation-duration: 2s;
+}
+
+@keyframes mijnanimatie1 {
+  60% {
+    transform: scale(0.7);
+    opacity: 1;}
+  100% {
+    transform: scale(1.2);}
+}
+
+p {
+  position: absolute;
+  top: 3.5vh;
+  right: 2vw;
+  text-decoration: none;
+  color: #353839;
+  font-weight: 300;
+  font-size: 1.1vw;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}

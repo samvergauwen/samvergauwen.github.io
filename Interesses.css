@@ -1,0 +1,252 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	font-size: 2.5rem;
+	padding: 3rem;
+	background-image: url('Afbeeldingen/Achtergrond.jpg');
+	background-size: 100vw;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 5rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	padding-bottom: 1rem;
+}
+
+.menu {
+	position: fixed;
+	top: 3rem;
+	right: 3rem;
+}
+
+.menu:hover {
+	animation-name: mijnanimatie1;
+  animation-duration: 2s;
+}
+
+@keyframes mijnanimatie1 {
+  60% {
+    transform: scale(0.7);
+    opacity: 1;}
+  100% {
+    transform: scale(1.2);}
+}
+
+nav {
+	display: none;
+	flex-direction: column;
+}
+
+nav a {
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+}
+
+nav a:hover {
+	animation-name: mijnanimatie1;
+  animation-duration: 2s;
+}
+
+ul {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li {
+	background-color: white;
+	height: 30rem;
+	margin-bottom: 2rem;
+  overflow: hidden;
+	position: relative;
+}
+
+li:nth-child(1) {
+	background-image: url('Afbeeldingen/Foto 1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(2) {
+  background-image: url('Afbeeldingen/Foto 2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(3) {
+  background-image: url('Afbeeldingen/Foto 3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(4) {
+  background-image: url('Afbeeldingen/Foto 4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(5) {
+  background-image: url('Afbeeldingen/Foto 5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(6) {
+  background-image: url('Afbeeldingen/Foto 6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(7) {
+  background-image: url('Afbeeldingen/Foto 7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(8) {
+  background-image: url('Afbeeldingen/Foto 8.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+li:nth-child(9) {
+  background-image: url('Afbeeldingen/Foto 9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  height: 100%;
+  position: relative;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: transparent;
+}
+
+li:hover h2 {
+  background-color: #8c8c8c;
+  color: white;
+  opacity: 0.9;
+}
+
+h2 span {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+@supports (grid-area: auto) {
+
+	ul {
+		max-width: none;
+	}
+
+	@media (min-width: 300px){
+
+	nav {
+		background-color: lightgrey;
+		width: 35vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 5rem;
+	}
+
+	nav a {
+		color: black;
+		font-size: 1.8rem;
+		margin-bottom: 3rem;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	main {
+		min-height: 88vh;
+	}
+}
+
+	ul {
+		margin: 2rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+	}
+
+	li {
+		margin-bottom: 2rem;
+	}
+
+	}
+
+  @media (min-width: 700px){
+
+	nav {
+		width: 25vw;
+	}
+
+	nav a {
+		font-size: 2rem;
+	}
+
+	ul {
+		grid-template-columns: 1fr 1fr;
+  }
+
+  }
+
+	@media (min-width: 1000px){
+
+	nav {
+		width: 20vw;
+	}
+
+	ul {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	}
+
+  @media (min-width: 1300px){
+
+	nav {
+		width: 15vw;
+	}
+
+	ul {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+  li:nth-child(1) {
+    background-image: url('Afbeeldingen/Foto 1.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+  }
+
+  li:nth-child(6) {
+    background-image: url('Afbeeldingen/Foto 6.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/5;
+  }
+
+  li:nth-child(7) {
+    background-image: url('Afbeeldingen/Foto 7.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+  }
+
+    }
+	}
